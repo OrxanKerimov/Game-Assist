@@ -1,0 +1,83 @@
+.info
+  margin-bottom: 20.2rem
+  position: relative
+  z-index: 1
+  &-title
+    margin-bottom: 8.2rem
+  &-item
+    display: flex
+    justify-content: space-between
+    &:nth-child(even)
+      .info-item
+        &__text
+          order: +1
+        &__img
+          background: url(../img/info-rectangle-2.png) 50% no-repeat
+          background-size: contain
+          margin-top: 1rem
+          margin-right: 0
+          margin-left: 1.6rem
+          &::after
+            transform: matrix(-1, 0, 0, 1, 0, 0)
+            inset: 13rem 2rem -1rem -1.6rem
+          img
+            top: 58%
+            width: 68.5rem
+            right: auto
+            left: 0
+    &:not(:last-child)
+      margin-bottom: 17.6rem
+    &__text
+      width: 52%
+      flex-shrink: 0
+      font-size: 2rem
+      +mag
+      font-weight: 500
+      letter-spacing: .02em
+      color: #fff
+    &__title
+      font-size: 3rem
+      letter-spacing: .02em
+      margin-bottom: 4rem
+    p
+      &:not(:last-child)
+        margin-bottom: 2.5rem
+    ul
+      margin: 2.9rem 0 0
+      padding-left: 2.7rem
+      li
+        font-size: 1.8rem
+        line-height: 1.56
+        letter-spacing: .02em
+        color: #9FA0A3
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1rem
+          left: -1.7rem
+          width: .7rem
+          height: 0.7rem
+          border-radius: 50%
+          background: #9FA0A3
+        // &:not(:last-child)
+        //   margin-bottom: .7rem
+    &__img
+      width: 37.4%
+      height: 48rem
+      flex-shrink: 0
+      background: url(../img/info-rectangle.png) 50% no-repeat
+      background-size: contain
+      margin-top: -2rem
+      margin-right: 1.6rem
+      border-radius: 2rem
+      // box-shadow: .5rem 1rem 4rem rgba(30, 41, 47, 0.4)
+      // filter: drop-shadow(.5rem 1rem 4rem rgba(30, 41, 47, 0.4))
+      &::after
+        inset: 13rem -1.6rem -1rem 2rem
+      img
+        position: absolute
+        top: 49%
+        right: 0
+        transform: translateY(-50%)
+        width: 74rem

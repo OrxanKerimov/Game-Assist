@@ -1,0 +1,49 @@
+.footer
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 3.4rem 0
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: .2rem
+      background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+      border-radius: 2rem
+      box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+  &-logo
+    font-size: 2.4rem
+    +neue
+    font-weight: 700
+    color: #fff
+  &-list
+    display: flex
+    align-items: center
+    li
+      font-size: 1.8rem
+      font-weight: 500
+      color: #fff
+      &:not(:last-child)
+        margin-right: 3.6rem
+  &-copy
+    display: flex
+    align-items: center
+    &__text
+      text-align: right
+    &__subtitle
+      font-size: 1.4rem
+      font-weight: 300
+      color: #9FA0A2
+      margin-bottom: .2rem
+    &__title
+      font-size: 1.8rem
+      font-weight: 300
+      span
+        font-weight: 600
+    &__img
+      margin-left: 1rem
+      width: 5.2rem

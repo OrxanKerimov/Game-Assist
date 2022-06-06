@@ -1,0 +1,110 @@
+.payments
+  margin-bottom: 14rem
+  position: relative
+  z-index: 1
+  &-title
+    margin-bottom: 9.8rem
+  &-form
+    &__items
+      width: 100%
+      display: flex
+      margin-bottom: 2.2rem
+      label
+        align-items: center
+        width: 18.1rem
+        height: 14rem
+        padding: 0
+        background: url(../img/payment-bg.png) 50% no-repeat
+        background-size: contain
+        border-radius: 3rem
+        cursor: pointer
+        &::before
+          inset: 0
+          background: #191F29
+          opacity: 0.5
+          box-shadow: 1rem 2rem 4rem -.7rem #0F131B, inset 0 .2rem .2rem -1px #FFFFFF, inset 0 0.144px .6rem rgba(255, 255, 255, 0.2)
+          z-index: -1
+        input:checked ~ span
+          // display: block
+          opacity: .1
+          // filter: blur(4rem)
+        span
+          // display: none
+          position: absolute
+          bottom: 0
+          left: 50%
+          transform: translate(-50%)
+          // width: 4.2rem
+          // height: 2.9rem
+          width: 100%
+          height: 100%
+          // border-radius: 10rem
+          border-radius: inherit
+          background: #8842FF
+          // filter: blur(2rem)
+          filter: none
+          margin: 0
+          z-index: -1
+          opacity: 0
+        &:not(:nth-child(8n))
+          margin-right: 1rem
+        img
+          width: 13rem
+    &__info
+      width: 50%
+      margin-bottom: 8.2rem
+      &-title
+        display: flex
+        align-items: center
+        font-size: 2.3rem
+        +mag
+        font-weight: 500
+        letter-spacing: .02em
+        color: #fff
+        margin-bottom: 2.7rem
+        span
+          font-size: 2.8rem
+          +euclid
+          color: #2BEA60
+          margin: 0 .6rem
+        img
+          width: 2.5rem
+          margin-right: 1.6rem
+      &-description
+        margin-left: 6.8rem
+        li
+          font-size: 1.8rem
+          +mag
+          font-weight: 500
+          line-height: 1.56
+          letter-spacing: .02em
+          color: #9FA0A3
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 1rem
+            left: -1.7rem
+            width: .7rem
+            height: 0.7rem
+            border-radius: 50%
+            background: #9FA0A3
+    &__bottom
+      width: 100%
+      display: flex
+      justify-content: space-between
+    &__privacy
+      width: 53%
+      flex-shrink: 0
+      label.label-checkbox
+        align-items: flex-start
+        margin-bottom: 3rem
+      .ckeckbox-description
+        line-height: 1.5
+      &-items
+        margin-bottom: 1.5rem
+    &__img
+      margin-top: -15rem
+      img
+        width: 73rem
+        top: 54%

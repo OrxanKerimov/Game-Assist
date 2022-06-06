@@ -1,0 +1,273 @@
+.reviews
+  margin-bottom: 20rem
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 8.5rem
+  &-count
+    font-size: 2rem
+    font-weight: 500
+    color: #9FA0A3
+    span
+      font-weight: 700
+      color: #fff
+  &-content
+    display: flex
+    justify-content: space-between
+  &-slider
+    // width: 36.5%
+    width: 43%
+    height: 46rem
+    margin: 0
+    padding-left: 5.5rem
+    padding-right: 10rem
+    // padding: 0 5.5rem
+    &-wrapper
+      height: auto
+    &__more
+      display: none
+    &__item
+      display: flex
+      align-items: center
+      // height: 7.5rem
+      min-height: 7.5rem
+      height: auto
+      // height: 10.9rem
+      padding: 1rem 3rem 1rem 16rem
+      // margin-bottom: 3.4rem
+      // margin-bottom: 1.8rem
+      position: relative
+      z-index: 1
+      overflow: hidden
+      cursor: pointer
+      &:not(:last-child)
+        margin-bottom: 3.4rem
+      &.active
+        // height: 13.2rem
+        min-height: 13.2rem
+        height: auto
+        background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+        border-radius: 2rem
+        box-shadow: 1rem 2rem 10rem #11151E
+        &::after
+          content: ''
+          position: absolute
+          bottom: -5.3rem
+          left: -3.4rem
+          width: 11.8rem
+          height: 11.8rem
+          border-radius: 50%
+          background: #4EDA7B
+          filter: blur(7rem)
+        &::before
+          content: ''
+          position: absolute
+          inset: .2rem
+          border-radius: inherit
+          background: #191F29
+          z-index: -1
+        .reviews-slider
+          &__author
+            left: 3.5rem
+            width: 9.1rem
+            height: 9.1rem
+          &__name
+            font-size: 2.3rem
+          &__service
+            font-size: 1.8rem
+    &__author
+      position: absolute
+      top: 50%
+      left: 4.5rem
+      transform: translateY(-50%)
+      width: 7.5rem
+      height: 7.5rem
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        inset: 0
+        border-radius: inherit
+        background: rgba(23, 23, 23, 0.01)
+        opacity: 0.2
+        box-shadow: 0 1.4rem 4rem -.6rem rgba(13, 10, 10, 0.3), inset 0 -1rem 1.1rem -.7rem rgba(255, 255, 255, 0.5), inset 0 1px .8rem -1px #FFFFFF, inset 0 0.576px .3rem rgba(255, 255, 255, 0.2), inset 0 0.144px .5rem rgba(255, 255, 255, 0.2)
+        z-index: -1
+      &.empty
+        &::after
+          content: ''
+          position: absolute
+          inset: .7rem
+          border-radius: inherit
+          background: #1E242F url(../img/author-empty.svg) 50% no-repeat
+          background-size: 1.7rem
+        img
+          display: none
+      img
+        width: 85%
+        border-radius: 50%
+        overflow: hidden
+    &__name
+      font-size: 1.8rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      color: #fff
+      margin-bottom: .6rem
+    &__service
+      font-size: 1.6rem
+      line-height: 1.5
+      color: #9FA0A3
+    &__kit
+      position: absolute
+      left: 0
+      bottom: 0
+  &-text
+    width: 56%
+    &__item
+      height: 100%
+      display: none
+      align-items: flex-start
+      flex-direction: column
+      &.active
+        display: flex
+    &__rating
+      display: flex
+      align-items: center
+      margin-bottom: 6.3rem
+      &-item
+        width: 2.5rem
+        height: 2.5rem
+        background: url(../img/star.svg) 50% no-repeat
+        background-size: contain
+        &.empty
+          background: url(../img/star-empty.png) 50% no-repeat
+          background-size: contain
+        &:not(:last-child)
+          margin-right: 1.3rem
+    &__title
+      font-size: 2.5rem
+      font-weight: 700
+      line-height: 1
+      margin-bottom: 2.2rem
+    &__description
+      width: 93%
+      font-size: 2rem
+      font-weight: 300
+      line-height: 1.65
+      margin-bottom: 6.4rem
+    &__date
+      font-size: 1.6rem
+      color: #9FA0A3
+      margin-bottom: 3rem
+    &__link
+      margin-top: auto
+      padding-left: 3.5rem
+      margin-bottom: 1.3rem
+  &-scrollbar.swiper-scrollbar
+    right: auto
+    left: .5rem
+    top: 0
+    height: 73%
+    width: 0.4rem
+    background: #343944
+    border-radius: 2rem
+    .swiper-scrollbar-drag
+      border-radius: 2rem
+      background: linear-gradient(246.49deg, #55FA83 27.6%, #61C5FE 89.03%)
+      box-shadow: 1rem 2rem 8rem rgba(17, 96, 49, 0.2)
+
+.all-reviews
+  margin-bottom: 3rem
+  &__content
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 7.3rem
+  .reviews
+    &-slider
+      &__item
+        align-items: flex-start
+        width: 37.2rem
+        flex-wrap: wrap
+        padding: 4rem 4rem 3.8rem
+        background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+        border-radius: 2rem
+        margin-bottom: 1rem
+        &::before
+          content: ''
+          position: absolute
+          inset: .2rem
+          border-radius: inherit
+          background: #191F29
+          z-index: -1
+        &:not(:nth-child(4n))
+          margin-right: 1rem
+        &-wrap
+          margin-top: auto
+          display: flex
+          align-items: center
+        &.active
+          .reviews-slider
+            &__author
+              top: 0
+              left: 0
+              width: 5.9rem
+              height: 5.9rem
+            &__name
+              font-size: 1.8rem
+          &::after
+            width: 13.2rem
+            height: 34.8rem
+            bottom: -15.7rem
+            left: -3.8rem
+      &__author
+        position: relative
+        flex-shrink: 0
+        top: 0
+        left: 0
+        transform: none
+        width: 5.9rem
+        height: 5.9rem
+        margin-right: 1.1rem
+        &.empty
+          &::after
+            background-size: 1.4rem
+      &__name
+        font-size: 1.8rem
+    &-text
+      &__rating
+        margin-bottom: 1.7rem
+        &-item
+          &:not(:last-child)
+            margin-right: 0.4rem
+      &__subtitle
+        font-size: 1.6rem
+        color: #fff
+        margin-bottom: 4rem
+      &__title
+        font-size: 1.8rem
+        +mag
+        letter-spacing: .02em
+        margin-bottom: 2rem
+      &__description
+        width: 100%
+        font-size: 1.6rem
+        line-height: 1.5
+        letter-spacing: .02em
+        margin-bottom: 4rem
+      &__date
+        position: absolute
+        top: 4.4rem
+        right: 4rem
+  &__more
+    left: 50%
+    transform: translateX(-50%)
+  &__img
+    width: 132.8rem
+    pointer-events: none
+    margin-top: -1rem
+    margin-left: 8rem

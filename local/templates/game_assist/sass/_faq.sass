@@ -1,0 +1,72 @@
+.faq
+  margin-bottom: 20rem
+  &-title
+    margin-bottom: 6.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-item
+    background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+    border-radius: 2rem
+    &::before
+      background: #191F29
+    &s
+      width: 52%
+      flex-shrink: 0
+    &:not(:last-child)
+      margin-bottom: 3rem
+    &__heading
+      display: flex
+      justify-content: space-between
+      align-items: center
+      min-height: 10rem
+      padding: 2rem 3rem 2rem 3.9rem
+      cursor: pointer
+      &.active
+        .faq-item__img
+          transform: rotate(-180deg)
+    &__title
+      max-width: 85%
+      font-size: 2rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      color: #fff
+    &__img
+      width: 4.4rem
+      transition: transform .25s
+      filter: drop-shadow(1rem 2rem 8rem rgba(17, 96, 49, 0.2))
+    &__dropdown
+      display: none
+      padding: 4.4rem 6rem 4.4rem 7rem
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 4rem
+        right: 4rem
+        height: .3rem
+        background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+        border-radius: 2rem
+        box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+      li
+        font-size: 2rem
+        font-weight: 300
+        line-height: 1.65
+        color: #9FA0A3
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1.4rem
+          left: -2rem
+          width: 0.6rem
+          height: 0.6rem
+          border-radius: 50%
+          background: #9FA0A3
+  &-img
+    width: 48%
+    flex-shrink: 0
+    margin-top: -11.5rem
+    margin-right: -6.5rem

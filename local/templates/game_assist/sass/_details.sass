@@ -1,0 +1,198 @@
+.details
+  margin: -12rem 0 20.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-block
+    width: 42.3%
+    height: 100%
+    flex-shrink: 0
+    background: linear-gradient(189.92deg, #2C994A 16.17%, #141923 113.79%)
+    border-radius: 2rem
+    margin-top: 7rem
+    margin-left: 1.8rem
+    &::before
+      background: #191F29
+    &::after
+      z-index: -2
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+      background: linear-gradient(246.49deg, #55FA83 27.6%, #61C5FE 89.03%)
+      inset: 10.4rem 2.3rem -1.8rem -1.8rem
+    &__logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, -40%)
+      width: 15.2rem
+      height: 14.9rem
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 2rem
+      img
+        width: 10.4rem
+        filter: drop-shadow(1.5rem .5rem 2.5rem #1E242F)
+  &-form
+    padding: 17.3rem 6.3rem 8.2rem
+    &__group
+      width: 100%
+      display: flex
+      justify-content: space-between
+      // align-items: center
+      &:not(:last-child)
+        margin-bottom: 3.95rem
+      label.label-checkbox
+        max-width: 80%
+        margin-bottom: 0
+        align-items: flex-start
+        box-shadow: none
+        > span
+          margin-top: 0.4rem
+          margin-right: 2rem
+        .ckeckbox
+          &-title
+            font-size: 2rem
+            line-height: 1.2
+            margin-bottom: .7rem
+          &-description
+            font-size: 2.4rem
+            font-weight: 500
+            letter-spacing: 0.02em
+            color: #2BEA60
+    &__info
+      margin-top: 1rem
+      position: relative
+      &-img
+        width: 2.25rem
+        cursor: pointer
+      &-dropdown
+        display: none
+        position: absolute
+        bottom: calc(100% + 2.3rem)
+        left: 50%
+        transform: translateX(-50%)
+        width: 51.6rem
+        z-index: 1
+        padding-bottom: 1.4rem
+        &-text
+          padding: 5rem 6rem 4.4rem
+          text-align: center
+          background: linear-gradient(240.2deg, #2C994A 28.17%, #141923 109.03%)
+          border-radius: 2rem
+          font-size: 1.6rem
+          +mag
+          font-weight: 500
+          line-height: 1.75
+          letter-spacing: .02em
+          color: #9FA0A3
+          &::before
+            background: #1A202A
+          &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 1.5rem) rotate(180deg)
+            width: 2rem
+            height: 2rem
+            background: url(../img/triangle.png) 50% no-repeat
+            background-size: contain
+            z-index: 2
+    &__price
+      width: 100%
+      display: flex
+      align-items: flex-end
+      font-size: 2rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      color: #fff
+      &-value
+        margin-left: 2rem
+        font-size: 3.6rem
+        +euclid
+        font-weight: 500
+        line-height: 1
+        color: #2BEA60
+    &__total
+      margin: 2rem 0 3.2rem
+    &__bonus
+      margin-bottom: 6.2rem
+      position: relative
+      &-value
+        margin-left: 1.5rem
+        font-size: 2.8rem
+      .details-form__info
+        position: absolute
+        top: .2rem
+        right: 0
+        margin: 0
+    &__btn
+      &s
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__basket
+      width: 22rem
+      min-width: auto
+      color: #fff
+      background: none
+      border: .2rem solid #2BEA60
+      &::after
+        width: 2.5rem
+        height: 2.5rem
+        background: url(../img/basket.svg) 50% no-repeat
+        background-size: contain
+  &-title
+    margin-bottom: 3.8rem
+  &-link
+    &:not(:last-child)
+      margin-right: 4.5rem
+    &s
+      display: flex
+      align-items: center
+      margin-bottom: 7rem
+  &-subtitle
+    font-size: 3rem
+    +mag
+    font-weight: 500
+    letter-spacing: .02em
+    margin-bottom: 3.8rem
+  &-text
+    width: 48%
+    flex-shrink: 0
+    &__group
+      &:not(:last-child)
+        margin-bottom: 4rem
+      &-title
+        display: flex
+        align-items: center
+        font-size: 2.3rem
+        +mag
+        font-weight: 500
+        letter-spacing: .02em
+        margin-bottom: 3rem
+        img
+          width: 2.7rem
+          flex-shrink: 0
+          margin-right: 1.5rem
+    &__list
+      padding-left: 6.8rem
+      li
+        font-size: 1.8rem
+        +mag
+        font-weight: 500
+        line-height: 1.56
+        letter-spacing: .02em
+        color: #9FA0A3
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1rem
+          left: -1.6rem
+          width: .7rem
+          height: .7rem
+          border-radius: 50%
+          background: #9FA0A3

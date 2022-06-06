@@ -1,0 +1,31 @@
+.authorization .block-rating__item {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../img/star-empty.svg) 50% no-repeat;
+    background-size: contain;
+}
+
+.authorization .block-rating__item.active {
+    background: url(../img/star.svg) 50% no-repeat;
+    background-size: contain;
+}
+.details-form__group label.label-checkbox {
+    max-width: 100%;
+}
+
+.active-checkbox {
+    content: '';
+}
+
+.services-item__title{
+    text-align: center;
+}
+
+.popup.popup-tasks .popup-tasks__group label.label-checkbox .ckeckbox-title {
+    font-size: 1.2rem;
+}
+
+/*.services-item{*/
+/*    width: 18.3%;*/
+/*    min-height: 26rem;*/
+/*}*/

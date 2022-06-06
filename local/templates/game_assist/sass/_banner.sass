@@ -1,0 +1,203 @@
+.banner
+  padding-top: 11rem
+  margin-bottom: 20rem
+  position: relative
+  z-index: 1
+  &-slider
+    margin-bottom: 7.5rem
+    &__item
+      display: flex
+      justify-content: space-between
+      min-height: 52rem
+      position: relative
+      z-index: 1
+    &__number
+      position: absolute
+      left: 7rem
+      top: 2rem
+      font-size: 30rem
+      +mag
+      font-weight: 700
+      letter-spacing: 0.02em
+      text-transform: uppercase
+      color: #fff
+      opacity: .1
+      z-index: -1
+      pointer-events: none
+    &__img
+      width: 57%
+      flex-shrink: 0
+      margin-top: .5rem
+      margin-left: -.3rem
+    &__text
+      width: 39.2%
+      flex-shrink: 0
+      padding: 8rem 0 5rem
+    &__title
+      letter-spacing: normal
+      margin-bottom: 5.4rem
+    &__group
+      display: flex
+      margin-bottom: 7.2rem
+    &__description
+      width: 24.3rem
+      font-size: 1.8rem
+      line-height: 1.33
+      &:not(:last-child)
+        margin-right: 7.8rem
+    &__kit
+      position: absolute
+      left: 0
+      top: 15rem
+  &-bottom
+    display: flex
+    justify-content: space-between
+    &__item
+      display: flex
+      align-items: center
+      font-size: 1.8rem
+      font-weight: 500
+      line-height: 1.33
+      color: #fff
+      &-number
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        width: 7.2rem
+        height: 7.2rem
+        flex-shrink: 0
+        font-size: 1.8rem
+        font-weight: 600
+        color: #2BEA60
+        position: relative
+        margin-right: 2rem
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          border-radius: inherit
+          background: rgba(23, 23, 23, 0.01)
+          opacity: 0.5
+          box-shadow: 0 1.4rem 4rem -.6rem rgba(13, 10, 10, 0.3), inset 0 -1rem 1.1rem -.7rem rgba(255, 255, 255, 0.5), inset 0 1px .8rem -1px #FFFFFF, inset 0 0.576px .3rem rgba(255, 255, 255, 0.2), inset 0 0.144px .5rem rgba(255, 255, 255, 0.2)
+  
+.banner-template
+  padding-top: 11rem
+  margin-bottom: -6.5rem
+  &__content
+    min-height: 60rem
+    display: flex
+    justify-content: space-between
+  &__text
+    padding: 9.2rem 0
+    width: 39%
+  &__title
+    letter-spacing: normal
+    margin-bottom: 6rem
+  &__subtitle
+    font-size: 1.8rem
+    +mag
+    font-weight: normal
+    line-height: 1.33
+    color: #9FA0A3
+    margin: -4.6rem 0 6.4rem
+    span
+      +euclid
+      font-weight: 500
+      color: #fff
+  &__img
+    width: 50%
+    margin-top: 1.7rem
+    margin-right: 6.4rem
+  &.banner-service
+    margin-bottom: 10.2rem
+    .path
+      margin-top: 9.1rem
+  &.banner-all-reviews
+    margin-bottom: -.5rem
+    .banner-template
+      &__group
+        display: flex
+        align-items: center
+        .banner-all-reviews-filter
+          min-width: auto
+          width: 21.6rem
+          background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+          margin-right: 4rem
+          font-size: 2rem
+          +mag
+          font-weight: 700
+          color: #fff
+          &::before
+            background: #191F29
+          &::after
+            width: 1.9rem
+            height: 1.1rem
+            background: url(../img/arrow-dropdown.svg) 50% no-repeat
+            background-size: contain
+      &__img
+        width: 32%
+        margin-top: 5.5rem
+        margin-right: 16rem
+  &.banner-contacts
+    margin-bottom: 25.5rem
+    .banner-template
+      &__content
+        margin-bottom: -8.3rem
+      &__text
+        width: 41%
+      &__title
+        letter-spacing: .02em
+      &__btn
+        padding-right: 9rem
+      &__img
+        width: 29.2%
+        margin-top: 7.5rem
+        margin-right: 18.8rem
+    .banner-contacts
+      &__bottom
+        display: flex
+      &__block
+        &s
+          &:first-child
+            margin-right: 19rem
+        &:not(:last-child)
+          margin-bottom: 4.7rem
+        &-title
+          display: flex
+          align-items: center
+          font-size: 2.3rem
+          +mag
+          font-weight: 500
+          letter-spacing: .02em
+          margin-bottom: 2.8rem
+          span
+            color: #9FA0A3
+            margin-left: 0.5rem
+          img
+            width: 3rem
+            flex-shrink: 0
+            margin-right: 1.5rem
+        &-list
+          padding-left: 6.8rem
+          li
+            font-size: 1.8rem
+            +mag
+            font-weight: 500
+            line-height: 1.56
+            letter-spacing: .02em
+            color: #9FA0A3
+            position: relative
+            &::before
+              content: ''
+              position: absolute
+              top: 50%
+              left: -1.8rem
+              transform: translateY(-50%)
+              width: .7rem
+              height: .7rem
+              border-radius: 50%
+              background: #9FA0A3

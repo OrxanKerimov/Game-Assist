@@ -1,0 +1,107 @@
+.popup
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.6)
+  z-index: 110
+  overflow-y: auto
+  overflow-x: hidden
+  &.active
+    display: block
+  &-wrap
+    min-height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 6rem 3rem
+  &-close
+    position: absolute
+    top: 5.9rem
+    right: 6.4rem
+    width: 3.2rem
+    cursor: pointer
+    z-index: 2
+  &-content
+    width: 66rem
+    position: relative
+  &-form
+    padding: 5rem 6rem 6rem
+    background: linear-gradient(189.92deg, #2C994A 16.17%, #141923 113.79%)
+    border-radius: 2rem
+    margin-left: 1.8rem
+    &::before
+      background: #191F29
+    &::after
+      inset: 10.5rem 2.3rem -1.8rem -1.8rem
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+      z-index: -2
+    &__btn
+      min-width: auto
+      width: 29.7rem
+  &-title
+    font-size: 3.6rem
+    +mag
+    font-weight: 500
+    letter-spacing: .02em
+    color: #fff
+    margin-bottom: 4rem
+  &-subtitle
+    font-size: 2.4rem
+    +mag
+    font-weight: 500
+    letter-spacing: .02em
+    color: #fff
+    margin-bottom: 3.5rem
+  .label-price
+    input
+      padding-right: 3rem
+      font-size: 3.6rem
+      +euclid
+      font-weight: 500
+      color: #2BEA60
+    &::after
+      content: '₽'
+      position: absolute
+      top: 50%
+      right: 3rem
+      transform: translateY(-50%)
+      font-size: 3.6rem
+      +euclid
+      font-weight: 500
+      color: #2BEA60
+  .payments
+    &-title
+      font-size: 2.4rem
+      +mag
+      font-weight: 500
+      letter-spacing: .02em
+      color: #fff
+      margin: 3.3rem 0 3.5rem
+    &-form
+      &__items
+        flex-wrap: wrap
+        margin-bottom: 3.5rem
+        label
+          width: 12.3rem
+          height: 9.5rem
+          margin-bottom: .6rem
+          &:not(:nth-child(4n))
+            margin-right: .6rem
+          img
+            width: 9rem
+      &__info
+        width: 100%
+        margin-bottom: 5rem
+        &-title
+          span:last-child
+            font-size: 2.3rem
+            +mag
+            color: inherit
+            font-weight: inherit
+            margin: 0
+            margin-left: 0.5rem
+        &-description
+          padding-right: 5rem

@@ -1,0 +1,39 @@
+.advantages
+  margin-bottom: 12.5rem
+  &-heading
+    margin-bottom: 9.2rem
+  &-subtitle
+    margin-top: 1.8rem
+    font-size: 1.8rem
+    color: #9FA0A3
+  &-content
+    display: flex
+    flex-wrap: wrap
+  &-item
+    width: 29.7%
+    display: flex
+    align-items: center
+    margin-bottom: 7.5rem
+    &:not(:nth-child(3n))
+      margin-right: 7.7rem
+    &__img
+      width: 14.2rem
+      height: 14rem
+      flex-shrink: 0
+      border-radius: 3rem
+      overflow: hidden
+      box-shadow: 1rem 2rem 4rem -.7rem #0F131B, inset 0 .2rem .2rem -1px #FFFFFF, inset 0 0.144px .5rem rgba(255, 255, 255, 0.2)
+      margin-right: 3.3rem
+      img
+        height: 100%
+        object-fit: cover
+    &__title
+      font-size: 2.3rem
+      +mag
+      font-weight: 500
+      letter-spacing: 0.02em
+      margin-bottom: 1.4rem
+    &__description
+      font-size: 1.6rem
+      line-height: 1.5
+      color: #9FA0A3

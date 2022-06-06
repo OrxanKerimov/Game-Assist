@@ -1,0 +1,278 @@
+.profile
+  padding-top: 19.5rem
+  margin-bottom: 20rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-side
+    width: 42.3%
+    flex-shrink: 0
+    height: 100%
+    border-radius: 2rem
+    padding: 5.7rem 6rem 11rem
+    background: linear-gradient(189.92deg, #2C994A 16.17%, #141923 113.79%)
+    margin-top: 1rem
+    margin-left: 1.8rem
+    &::before
+      background: #191F29
+    &::after
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+      z-index: -2
+      inset: 10.4rem 2.3rem -1.8rem -1.8rem
+    &__heading
+      margin-bottom: 6rem
+    &__info
+      display: flex
+      align-items: center
+      margin-bottom: 3rem
+      &-photo
+        width: 10.8rem
+        height: 10.6rem
+        border-radius: 2rem
+        flex-shrink: 0
+        margin-right: 4rem
+        img
+          position: absolute
+          inset: .2rem
+          width: calc(100%  - .4rem)
+          height: calc(100%  - .4rem)
+          object-fit: cover
+          border-radius: inherit
+      &-name
+        font-size: 2.4rem
+        +mag
+        font-weight: 700
+        letter-spacing: .02em
+        color: #fff
+        margin-bottom: 3rem
+      &-mail
+        font-size: 1.8rem
+        +mag
+        font-weight: 500
+        letter-spacing: .02em
+        color: #9FA0A3
+    &__balance
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-info
+        display: flex
+        align-items: flex-end
+        font-size: 2rem
+        +mag
+        font-weight: 700
+        letter-spacing: .02em
+        color: #fff
+      &-value
+        font-size: 3.6rem
+        +euclid
+        font-weight: 500
+        line-height: 1
+        color: #2BEA60
+        margin-left: 2rem
+      &-btn
+        min-width: auto
+        width: 21.7rem
+    &__logout
+      display: none
+    &__btn
+      display: block
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: .3rem
+        background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+        border-radius: 2rem
+        box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+        z-index: -1
+      &:first-child
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: .3rem
+          background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+          border-radius: 2rem
+          box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+          z-index: -1
+      &.active
+        .profile-side__btn-inner::before
+          content: ''
+      &-inner
+        min-height: 9.6rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-right: 1.8rem
+        position: relative
+        overflow: hidden
+        &::before
+          // content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) rotate(75deg)
+          width: 11.6rem
+          height: 30.3rem
+          border-radius: 50%
+          background: #4EDA7B
+          filter: blur(7rem)
+      &-title
+        font-size: 2.4rem
+        +mag
+        font-weight: 500
+        letter-spacing: .02em
+        color: #fff
+      &-img
+        width: 2.7rem
+  &-block
+    width: 48%
+    flex-shrink: 0
+    &__item
+      display: none
+      &.active
+        display: block
+  &-title
+    margin-bottom: 4.5rem
+  &-info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9.5rem
+    &__photo
+      width: 20.1rem
+      height: 19.8rem
+      border-radius: 2rem
+      margin-bottom: 1.7rem
+      img
+        position: absolute
+        inset: .2rem
+        width: calc(100% - .4rem)
+        height: calc(100% - .4rem)
+        object-fit: cover
+        border-radius: inherit
+      &-block
+        text-align: center
+      &-change
+        font-size: 1.8rem
+        +mag
+        font-weight: 500
+        letter-spacing: .02em
+        color: #2BEA60
+        text-decoration: underline
+    &__group
+      width: 68.5%
+  &-group
+    width: 70.5%
+    &:not(:last-child)
+      margin-bottom: 10.5rem
+    &__title
+      font-size: 3rem
+      +mag
+      font-weight: 500
+      letter-spacing: .02em
+      color: #fff
+      margin-bottom: 4rem
+    &__btn
+      margin-top: 4.5rem
+      padding-right: 9rem
+  &-social
+    &__item
+      min-height: 10rem
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 2rem 4.5rem 2rem 4rem
+      background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+      border-radius: 2rem
+      margin-bottom: 2.5rem
+      &.active
+        .profile-social__item-checked
+          display: flex
+      &::before
+        background: #191F29
+      &-checked
+        position: absolute
+        inset: .1rem
+        border-radius: inherit
+        overflow: hidden
+        // display: flex
+        display: none
+        justify-content: space-between
+        align-items: center
+        padding: 2rem 4.5rem 2rem 4rem
+        background: #191F29
+        z-index: 1
+        &::before
+          content: ''
+          position: absolute
+          left: -6.2rem
+          top: 50%
+          transform: translateY(-50%) rotate(75deg)
+          width: 11.6rem
+          height: 30.3rem
+          background: #4EDA7B
+          filter: blur(7rem)
+          z-index: -1
+    &__title
+      font-size: 2rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      color: #fff
+    &__img
+      width: 2.1rem
+  &-order
+    display: flex
+    align-items: flex-start
+    padding: 4.5rem 5rem
+    background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+    border-radius: 2rem
+    &::before
+      background: #191F29
+    &s
+      width: 104.5%
+      margin-left: -3rem
+    &:not(:last-child)
+      margin-bottom: 2rem
+    &__img
+      width: 10.5rem
+      height: 10.3rem
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-shrink: 0
+      border-radius: 2rem
+      margin-top: 0.2rem
+      margin-right: 5rem
+      img
+        width: 6.8rem
+        filter: drop-shadow(15px 5px 25px #1E242F)
+    &__text
+      +mag
+      font-weight: 500
+    &__title
+      font-size: 3.2rem
+      letter-spacing: .02em
+      color: #fff
+      margin-bottom: 1.6rem
+    &__description
+      font-size: 1.8rem
+      line-height: 1.56
+      letter-spacing: .02em
+      color: #9FA0A3
+      margin-bottom: 3.4rem
+    &__status
+      font-size: 1.8rem
+      letter-spacing: .02em
+      color: #2BEA60
+      &.in-progress
+        color: #EAD72B
+      &.await
+        color: #BF2E00

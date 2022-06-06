@@ -1,0 +1,174 @@
+.quick
+  margin-bottom: 20.2rem
+  position: relative
+  z-index: 1
+  &-title
+    margin-bottom: 6.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+    position: relative
+  &-form
+    width: 48%
+  &-contact
+    width: 42.3%
+    height: 100%
+    min-height: 53.5rem
+    padding: 18.2rem 5.5rem 3rem
+    background: url(../img/rectangle-contact.svg) 50% no-repeat
+    background-size: contain
+    margin-top: -7.5rem
+    margin-right: 1.8rem
+    border-radius: 2rem
+    box-shadow: .5rem 1rem 4rem rgba(30, 41, 47, 0.4)
+    position: relative
+    &::after
+      inset: 14.4rem -1.8rem -1.6rem 2.3rem
+    &__img
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, -28%)
+      width: 15.2rem
+      height: 14.9rem
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 2rem
+      z-index: 1
+      img
+        width: 8.4rem
+        filter: drop-shadow(1.5rem .5rem 2.5rem #1E242F)
+    &__title
+      font-size: 3rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      margin-bottom: 6rem
+    &__group
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__item
+      width: 50%
+      display: flex
+      align-items: center
+      margin-bottom: 4.2rem
+      &:nth-child(2n)
+        width: 43%
+      &-number
+        width: 7.2rem
+        height: 7.2rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        font-size: 1.8rem
+        font-weight: 600
+        color: #fff
+        margin-right: 2rem
+        position: relative
+        z-index: 1
+        &::before
+          content: ''
+          position: absolute
+          inset: 0
+          border-radius: inherit
+          background: rgba(23, 23, 23, 0.01)
+          opacity: 0.5
+          box-shadow: 0 1.4rem 4rem -.6rem rgba(13, 10, 10, 0.3), inset 0 -1rem 1.1rem -.7rem rgba(255, 255, 255, 0.5), inset 0 1px .8rem -1px #FFFFFF, inset 0 0.576px .3rem rgba(255, 255, 255, 0.2), inset 0 0.144px .5rem rgba(255, 255, 255, 0.2)
+      &-label
+        font-size: 1.6rem
+        font-weight: 500
+        color: #9FA0A3
+        margin-bottom: 1rem
+      &-value
+        display: inline-block
+        font-size: 1.8rem
+        font-weight: 700
+        color: #fff
+  &-link
+    position: absolute
+    bottom: 4rem
+    right: 0
+  &-filter
+    background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+    box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+    border-radius: 2rem
+    z-index: 5
+    &::before
+      background: #191F29
+    &__wrap
+      width: 100%
+      height: 10rem
+      margin-bottom: 2.5rem
+    .select
+      &_checked
+        min-height: 10rem
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 2rem 10rem 2rem 4rem
+        position: relative
+        cursor: pointer
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          right: 3.5rem
+          transform: translateY(-50%)
+          width: 4.4rem
+          height: 4.4rem
+          background: url(../img/faq-arrow.svg) 50% no-repeat
+          background-size: contain
+          box-shadow: 1rem 2rem 8rem rgba(17, 96, 49, 0.2)
+          transition: transform .25s
+        &.active
+          &::after
+            transform: translateY(-50%) rotate(-180deg)
+      &-name
+        font-size: 1.6rem
+        color: #9FA0A3
+        margin-bottom: 1rem
+      &-text
+        font-size: 2rem
+        +mag
+        font-weight: 700
+        letter-spacing: .02em
+        color: #fff
+      &-dropdown
+        display: none
+        width: 100%
+        padding: 0 4rem
+        &__option
+          padding: 2.5rem 0
+          font-size: 2rem
+          +mag
+          font-weight: 700
+          letter-spacing: .02em
+          color: #fff
+          position: relative
+          cursor: pointer
+          &:not(:last-child)
+            &::after
+              content: ''
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: .3rem
+              background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+              border-radius: 2rem
+              box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+          &:first-child
+            &::before
+              content: ''
+              position: absolute
+              top: 0
+              left: 0
+              width: 100%
+              height: .3rem
+              background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+              border-radius: 2rem
+              box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)

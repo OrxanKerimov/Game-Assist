@@ -1,0 +1,72 @@
+.services-filters
+  margin-bottom: 24.3rem
+  position: relative
+  z-index: 10
+  &__content
+    border-radius: 2rem
+    background: linear-gradient(114.48deg, #2C994B -10.37%, #363F50 66.24%)
+    box-shadow: 1rem 2rem 10rem rgba(17, 21, 30, 0.4)
+    &::before
+      background: #191F29
+  &__title
+    display: none
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 10rem
+    padding: 2rem 1rem
+    >li
+      height: 100%
+      font-size: 2rem
+      +mag
+      font-weight: 700
+      letter-spacing: .02em
+      color: #fff
+      position: relative
+      >a
+        display: flex
+        align-items: center
+        height: 100%
+        padding: 0 3rem
+        white-space: nowrap
+        &.active
+          img
+            transform: rotate(-180deg)
+        img
+          width: 1.9rem
+          flex-shrink: 0
+          margin-left: .8rem
+          transition: transform .25s
+      &:not(:last-child)
+        border-right: 1px solid #2C994A
+  &__dropdown
+    padding-top: 1.3rem
+    display: none
+    position: absolute
+    top: calc(100% + 1.9rem)
+    left: 50%
+    transform: translateX(-50%)
+    &-list
+      background: linear-gradient(216.67deg, #2C994A 47.67%, #141923 145.65%)
+      border-radius: 2rem
+      text-align: center
+      padding: .5rem 4rem
+      &::before
+        background: #1A202A
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -80%)
+        width: 1.8rem
+        height: 1.3rem
+        background: url(../img/triangle.png) 50% no-repeat
+        background-size: contain
+      li
+        &:not(:last-child)
+          border-bottom: 1px solid #2C994A
+        a
+          display: block
+          padding: 2.5rem 0
